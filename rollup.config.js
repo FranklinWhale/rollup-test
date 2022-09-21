@@ -14,10 +14,10 @@ export default defineConfig([
 		},
 		treeshake: "smallest",
 		plugins: [
-			typescript(),
 			nodeResolve({ browser: true }),
 			commonjs(),
-			json()
+			json(),
+			typescript()
 		]
 	},
 	{
